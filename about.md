@@ -2,14 +2,13 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+### A little about me
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Hi! I am a Computer Science undergraduate studying in Seoul, South Korea. It is my sincere hope that you have found the answers you needed while browsing the blog. Remember, the blog can be a means, but I surely hope it's not an end.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[P11co@proton.me](mailto:P11co.proton.me)

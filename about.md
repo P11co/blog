@@ -1,11 +1,9 @@
 ---
 layout: page
-title:
+title: A little about me
 permalink: /about/
 published: true
 ---
-
-### A little about me
 
 Hi! I am a Computer Science undergraduate studying in Seoul, South Korea. It is my sincere hope that you have found the answers you needed while browsing the blog. Remember, the blog can be a means, but I surely hope it's not an end.
 

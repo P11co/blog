@@ -11,9 +11,6 @@ This article is a step-by-step guide to installing VSC on MacOS for C++ use. The
 
 ## Overview
 #### 1. Download XCode
-
-![[Pasted image 20220527095600.png]]
-
 Clang is the default C++ compiler on MacOS. The XCode IDE contains necessary tools to download clang. You can download Xcode from the AppStore. Make sure to check your MacOS version first before downloading, as it is a 5+ GB download...
 
 ##### What if the latest version of XCode isn't supported on my Mac?

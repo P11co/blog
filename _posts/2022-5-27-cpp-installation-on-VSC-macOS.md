@@ -35,6 +35,7 @@ After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into 
 You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 - To check if clang is successfully installed, type:
 >  `clang --version`
+
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-24 at 4.58.01 PM.png)
 
 ==*What if I get an error message like this?[^3]:*==
@@ -52,7 +53,7 @@ You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 Download the IDE of your choice. In this guide, we will focus on the setup of the versatile VSC. Note that VSC is an **IDE without a compiler**. It can run C/C++, Java, Python, and pretty much any language. Thus, the setup is more confusing than an IDE with built-in compilers like CLion or Eclipse for C/C++, since the installation of the compiler and IDE is separate.
 
 ### 4. Install VSC Extensions[^4] {#step4}
-This part of the guide is the most important, especially if you are not familiar with the VSC interface or easily scared by .json files (*I am!*).
+This part of the guide is the most important, especially if you are not familiar with the VSC interface ~~or easily scared by .json files~~ (*I am too, no worries!*).
 
 On the left panel, there is an icon with 4 squares. This is the extension tab. From here, we can download the plethora of add-ons that are coded by the community for VSC. 
 
@@ -131,5 +132,5 @@ int main()
  
 [^1]: [The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 [^2]: [Clang installation](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
-[^3]: *[`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
-[^4]: *[CodeRunner Setup](https://wooono.tistory.com/299)
+[^3]: [`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
+[^4]: [CodeRunner Setup](https://wooono.tistory.com/299)

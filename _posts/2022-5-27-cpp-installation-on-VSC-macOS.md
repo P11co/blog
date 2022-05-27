@@ -4,19 +4,27 @@ title: C++ Installation on VSC (macOS)
 ---
 
 ### Introduction
-#### ***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???*** Hey, I can help you. Follow me! [Skip to Step 4]
+#### ***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???***
+#### Hey, I can help you. Follow me! [Skip to Step 4]
 *The process of setting up an IDE and an ideal workflow is usually not difficult, especially if you have a tried-and-tested workflow. However, installing and setting up the IDE still takes a lot of time, and might end up wasting your time if that single setting foils your entire setup.*
 
 This article is a step-by-step guide to installing **VSC on MacOS for C++ use**.
 
-### The Process
-#### 1. [Download XCode](https://developer.apple.com/support/xcode/)
+### Table of Contents:
+1. [Download xCode](#step1)
+2. [Install clang](#step2)
+3. [Download VSC](#step3)
+4. [Install VSC Extensions and setup](#step4)
+
+
+### The Process[^1] 
+#### 1. [Download XCode](https://developer.apple.com/support/xcode/)  {#step1}
 Clang is the default C++ compiler on MacOS. The XCode IDE contains necessary tools to download clang. In most cases, you should download Xcode from the [AppStore](https://apps.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
 
 *What if the latest version of XCode isn't supported on my Mac?*
 *Check the **"Minimum requirements and supported SDKs"**, and find the right XCode version and download it from the Apple Developer website. You will need to log into your Apple account.*
 
-#### 2. Install Clang
+#### 2. Install Clang[^2] {#step2}
 After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into your Applications folder.
 
 * Open Terminal
@@ -31,7 +39,7 @@ You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 10.19.47 AM.png)
 
-*What if I get an error message like this?:*
+*What if I get an error message like this?[^3]:*
 ```
 	xcode-select: error: command line tools are already installed, 
 	use "Software Update" to install updates
@@ -42,10 +50,10 @@ You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 	sudo xcode-select --install
 ```
 
-#### 3. [Download VSC](https://code.visualstudio.com/)
+#### 3. [Download VSC](https://code.visualstudio.com/) {#step3}
 Download the IDE of your choice. In this guide, we will focus on the setup of the versatile VSC. Note that VSC is an **IDE without a compiler**. It can run C/C++, Java, Python, and pretty much any language. Thus, the setup is more confusing than an IDE with built-in compilers like CLion or Eclipse for C/C++, since the installation of the compiler and IDE is separate.
 
-#### 4. Install VSC Extensions
+#### 4. Install VSC Extensions[^4] {#step4}
 This part of the guide is the most important, especially if you are not familiar with the VSC interface or easily scared by .json files (*I am!*).
 
 On the left panel, there is an icon with 4 squares. This is the extension tab. From here, we can download the plethora of add-ons that are coded by the community for VSC. 
@@ -118,12 +126,8 @@ int main()
 ```
 9. Where the "-std=c++17", you may have "-std=c++98" or nothing at all. You can type the desired c++ version of choice (ex. c++11, c++17, c++20).
 10. Now run your code by clicking the Run button on the top right -> your setup is complete!
-
-### Sources:
- *If you're still unsure, dig in! My guide corroborates information from multiple sources but lacks images - these guides may prove to be friendlier.*
-[The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)
-[Clang installation](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
-*[`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
-*[CodeRunner Setup](https://wooono.tistory.com/299)
-
-*Articles in Korean
+ 
+[^1]: [The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+[^2]: [Clang installation](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
+[^3]: *[`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
+[^4]: *[CodeRunner Setup](https://wooono.tistory.com/299)

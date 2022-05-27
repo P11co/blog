@@ -10,3 +10,7 @@ Hi! I am a Computer Science undergraduate studying in Seoul, South Korea. It is 
 ### Contact me
 
 [P11co@proton.me](mailto:P11co.proton.me)
+
+### Web
+
+This website is built using `gh-pages` and Jekyll (by conveniently using the `jekyll-now` fork).

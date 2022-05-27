@@ -19,19 +19,28 @@ Clang is the default C++ compiler on MacOS. The XCode IDE contains necessary too
 #### 2. Install Clang
 After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into your Applications folder.
 
-1. Open Terminal
-2. Type `clang --version` to check whether clang is already installed.
-3. If not or if outdated, type `command xcode-select --install` to install clang. 
-4. You'll have to **Install**, **Agree**, and click **Done** to a few statements.
-5. Finally, type `clang --version` again to check if clang is successfully installed.
+* Open Terminal
+- To check whether clang is already installed, type:
+> `clang --version`
+- To install clang, type:
+> `command xcode-select --install`
 
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 10.19.47 AM.png)
+You'll have to **Install**, **Agree**, and click **Done** to a few statements.
+- To check if clang is successfully installed, type:
+>  `clang --version`
+
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 10.19.47 AM.png)
 
 *What if I get an error message like this?:*
-`xcode-select: error: command line tools are already installed, use "Software Update" to install updates`
-*This means you've previously installed clang. We will delete the previous install, and reinstall clang. Enter the following in the terminal, line by line.*
-1. ```sudo rm -rf /Library/Developer/CommandLineTools```
-2. ```sudo xcode-select --install```
+```
+	xcode-select: error: command line tools are already installed, 
+	use "Software Update" to install updates
+```
+*This means you've previously installed clang. We will delete the previous install, and reinstall clang. Enter the following in the terminal:*
+```
+	sudo rm -rf /Library/Developer/CommandLineTools
+	sudo xcode-select --install
+```
 
 #### 3. [Download VSC](https://code.visualstudio.com/)
 Download the IDE of your choice. In this guide, we will focus on the setup of the versatile VSC. Note that VSC is an **IDE without a compiler**. It can run C/C++, Java, Python, and pretty much any language. Thus, the setup is more confusing than an IDE with built-in compilers like CLion or Eclipse for C/C++, since the installation of the compiler and IDE is separate.
@@ -41,16 +50,16 @@ This part of the guide is the most important, especially if you are not familiar
 
 On the left panel, there is an icon with 4 squares. This is the extension tab. From here, we can download the plethora of add-ons that are coded by the community for VSC. 
 
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.08.17 AM.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.08.17 AM.png)
 
 1. First, we must download the C/C++ extension by Microsoft. This is a prerequisite to run c++ code on VSC.
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.10.30 AM.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.10.30 AM.png)
 2. Next, we will install CodeRunner. This extension allows us to efficiently run c++ code in a click of a button (instead of compiling and running in the Terminal by using command lines.)
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.12.49 AM 1.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.12.49 AM 1.png)
 3. Right-clicking on CodeRunner > Extension Settings > Run in Terminal > True
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.15.44 AM.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.15.44 AM.png)
 4. In Extension Settings > Executor Map > Edit settings.json
-[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.17.50 AM.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.17.50 AM.png)
 5. ***Add/replace the following line to where "cpp" is located:***
 ```json
 "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
@@ -112,9 +121,9 @@ int main()
 
 ### Sources:
  *If you're still unsure, dig in! My guide corroborates information from multiple sources but lacks images - these guides may prove to be friendlier.*
-Step 0: [The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)
-Step 2: [Clang installation](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
-*Step 2 (FAQ): [`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
-*Step 4: [CodeRunner Setup](https://wooono.tistory.com/299)
+[The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+[Clang installation](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
+*[`xcode-select: error:`](https://investechnews.com/2021/06/15/mac-commandlinetools-setup-error/)
+*[CodeRunner Setup](https://wooono.tistory.com/299)
 
 *Articles in Korean

@@ -4,7 +4,7 @@ title: C++ Installation on VSC (macOS)
 ---
 
 ### Introduction
-#### ***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???*** [Hey, I can help you. Follow me!](#step4)
+#### ==***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???***== [Hey, I can help you. Follow me!](#step4)
 *The process of setting up an IDE and an ideal workflow is usually not difficult, especially if you have a tried-and-tested workflow. However, installing and setting up the IDE still takes a lot of time, and might end up wasting your time if that single setting foils your entire setup.*
 
 This article is a step-by-step guide to installing **VSC on MacOS for C++ use**.
@@ -20,7 +20,7 @@ This article is a step-by-step guide to installing **VSC on MacOS for C++ use**.
 #### 1. [Download XCode](https://developer.apple.com/support/xcode/)  {#step1}
 Clang is the default C++ compiler on MacOS. The XCode IDE contains necessary tools to download clang. In most cases, you should download Xcode from the [AppStore](https://apps.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
 
-*What if the latest version of XCode isn't supported on my Mac?*
+==*What if the latest version of XCode isn't supported on my Mac?*==
 *Check the **"Minimum requirements and supported SDKs"**, and find the right XCode version and download it from the Apple Developer website. You will need to log into your Apple account.*
 
 #### 2. Install Clang[^2] {#step2}
@@ -37,7 +37,7 @@ You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 >  `clang --version`
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-24 at 4.58.01 PM.png)
 
-*What if I get an error message like this?[^3]:*
+==*What if I get an error message like this?[^3]:*==
 ```
 	xcode-select: error: command line tools are already installed, 
 	use "Software Update" to install updates

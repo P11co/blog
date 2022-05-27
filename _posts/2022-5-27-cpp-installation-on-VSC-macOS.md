@@ -4,8 +4,7 @@ title: C++ Installation on VSC (macOS)
 ---
 
 ### Introduction
-#### ***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???***
-#### Hey, I can help you. Follow me! [Skip to Step 4]
+#### ***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???*** [Hey, I can help you. Follow me!](#step4)
 *The process of setting up an IDE and an ideal workflow is usually not difficult, especially if you have a tried-and-tested workflow. However, installing and setting up the IDE still takes a lot of time, and might end up wasting your time if that single setting foils your entire setup.*
 
 This article is a step-by-step guide to installing **VSC on MacOS for C++ use**.
@@ -36,8 +35,7 @@ After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into 
 You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 - To check if clang is successfully installed, type:
 >  `clang --version`
-
-![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 10.19.47 AM.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-24 at 4.58.01 PM.png)
 
 *What if I get an error message like this?[^3]:*
 ```
@@ -69,6 +67,7 @@ On the left panel, there is an icon with 4 squares. This is the extension tab. F
 4. In Extension Settings > Executor Map > Edit settings.json
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.17.50 AM.png)
 5. ***Add/replace the following line to where "cpp" is located:***
+
 ```json
 "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
 ```
@@ -91,8 +90,10 @@ int main()
     cout << endl;
 }
 ```
+
 7. Go to VSC Menu (top of screen) > Terminal > Configure default build task > select "C/C++ clang++ build active file".
 8.  This opens the tasks.json file. It looks like this:
+
 ```
 {
   // See https://go.microsoft.com/fwlink/?LinkId=733558
@@ -124,7 +125,8 @@ int main()
   ]
 }
 ```
-9. Where the "-std=c++17", you may have "-std=c++98" or nothing at all. You can type the desired c++ version of choice (ex. c++11, c++17, c++20).
+
+9. Instead of "-std=c++17", you may have "-std=c++98" or nothing at all. You can type the desired c++ version of choice (ex. c++11, c++17, c++20).
 10. Now run your code by clicking the Run button on the top right -> your setup is complete!
  
 [^1]: [The de facto standard installation guide by Microsoft, the creators of VSC!](https://code.visualstudio.com/docs/cpp/config-clang-mac)

@@ -3,27 +3,27 @@ layout: post
 title: C++ Installation on VSC (macOS)
 ---
 
-### Introduction
+## Introduction
 #### ==***WHY CAN'T I USE C++17 ON MY MAC, WHY IS IT STUCK ON C++98???***== [Hey, I can help you. Follow me!](#step4)
 *The process of setting up an IDE and an ideal workflow is usually not difficult, especially if you have a tried-and-tested workflow. However, installing and setting up the IDE still takes a lot of time, and might end up wasting your time if that single setting foils your entire setup.*
 
 This article is a step-by-step guide to installing **VSC on MacOS for C++ use**.
 
-### Table of Contents:
+## Table of Contents:
 1. [Download xCode](#step1)
 2. [Install clang](#step2)
 3. [Download VSC](#step3)
 4. [Install VSC Extensions and setup](#step4)
 
 
-### The Process[^1] 
-#### 1. [Download XCode](https://developer.apple.com/support/xcode/)  {#step1}
+## The Process[^1] 
+### 1. [Download XCode](https://developer.apple.com/support/xcode/)  {#step1}
 Clang is the default C++ compiler on MacOS. The XCode IDE contains necessary tools to download clang. In most cases, you should download Xcode from the [AppStore](https://apps.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
 
 ==*What if the latest version of XCode isn't supported on my Mac?*==
 *Check the **"Minimum requirements and supported SDKs"**, and find the right XCode version and download it from the Apple Developer website. You will need to log into your Apple account.*
 
-#### 2. Install Clang[^2] {#step2}
+### 2. Install Clang[^2] {#step2}
 After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into your Applications folder.
 
 * Open Terminal
@@ -48,10 +48,10 @@ You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 	sudo xcode-select --install
 ```
 
-#### 3. [Download VSC](https://code.visualstudio.com/) {#step3}
+### 3. [Download VSC](https://code.visualstudio.com/) {#step3}
 Download the IDE of your choice. In this guide, we will focus on the setup of the versatile VSC. Note that VSC is an **IDE without a compiler**. It can run C/C++, Java, Python, and pretty much any language. Thus, the setup is more confusing than an IDE with built-in compilers like CLion or Eclipse for C/C++, since the installation of the compiler and IDE is separate.
 
-#### 4. Install VSC Extensions[^4] {#step4}
+### 4. Install VSC Extensions[^4] {#step4}
 This part of the guide is the most important, especially if you are not familiar with the VSC interface or easily scared by .json files (*I am!*).
 
 On the left panel, there is an icon with 4 squares. This is the extension tab. From here, we can download the plethora of add-ons that are coded by the community for VSC. 

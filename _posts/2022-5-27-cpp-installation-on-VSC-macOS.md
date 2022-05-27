@@ -25,7 +25,7 @@ After downloading *XCode*, mount the *XCode.dmg* file and move *XCode.app* into 
 4. You'll have to **Install**, **Agree**, and click **Done** to a few statements.
 5. Finally, type `clang --version` again to check if clang is successfully installed.
 
-![[Screen Shot 2022-05-27 at 10.19.47 AM.png]]
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 10.19.47 AM.png)
 
 *What if I get an error message like this?:*
 `xcode-select: error: command line tools are already installed, use "Software Update" to install updates`
@@ -40,16 +40,17 @@ Download the IDE of your choice. In this guide, we will focus on the setup of th
 This part of the guide is the most important, especially if you are not familiar with the VSC interface or easily scared by .json files (*I am!*).
 
 On the left panel, there is an icon with 4 squares. This is the extension tab. From here, we can download the plethora of add-ons that are coded by the community for VSC. 
-![[Screen Shot 2022-05-27 at 11.08.17 AM.png]]
+
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.08.17 AM.png)
+
 1. First, we must download the C/C++ extension by Microsoft. This is a prerequisite to run c++ code on VSC.
-![[Screen Shot 2022-05-27 at 11.10.30 AM.png]]
-2. Next, we will install CodeRunner. This extension allows us to efficiently run c++ code in a click of a button (instead of compiling and running in the Terminal by using command lines.) 
-![[Screen Shot 2022-05-27 at 11.12.49 AM 1.png]]
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.10.30 AM.png)
+2. Next, we will install CodeRunner. This extension allows us to efficiently run c++ code in a click of a button (instead of compiling and running in the Terminal by using command lines.)
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.12.49 AM 1.png)
 3. Right-clicking on CodeRunner > Extension Settings > Run in Terminal > True
-![[Screen Shot 2022-05-27 at 11.15.44 AM.png]]
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.15.44 AM.png)
 4. In Extension Settings > Executor Map > Edit settings.json
-![[Screen Shot 2022-05-27 at 11.17.50 AM.png]]
-![[Screen Shot 2022-05-27 at 11.12.49 AM 1.png]]
+[_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.17.50 AM.png)
 5. ***Add/replace the following line to where "cpp" is located:***
 ```json
 "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"

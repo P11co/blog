@@ -75,30 +75,32 @@ This part of the guide is the most important, especially if you are not familiar
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.08.17 AM.png)
 
-1. First, we must download the C/C++ extension by Microsoft. This is a prerequisite to run c++ code on VSC.
+- First, we must download the C/C++ extension by Microsoft. This is a prerequisite to run c++ code on VSC.
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.10.30 AM.png)
 
 
-2. Next, we will install CodeRunner. This extension allows us to efficiently run c++ code in a click of a button (instead of compiling and running in the Terminal by using command lines.)
+- Next, we will install CodeRunner. This extension allows us to efficiently run c++ code in a click of a button (instead of compiling and running in the Terminal by using command lines.)
 
-![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.12.49 AM 1.png)
+![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.12.49 AM.png)
 
-3. Right-clicking on CodeRunner > Extension Settings > Run in Terminal > ✅
+- Right-clicking on CodeRunner > Extension Settings > Run in Terminal > ✅
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.15.44 AM.png)
 
-4. In Extension Settings > Executor Map > Edit settings.json
+- In Extension Settings > Executor Map > Edit settings.json
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2022-05-27 at 11.17.50 AM.png)
 
-5. ***Add/replace the following line to where "cpp" is located:***
+[Screen Shot 2022-05-27 at 11.19.29 AM.png](https://github.com/P11co/blog/blob/master/images/Screen%20Shot%202022-05-27%20at%2011.19.29%20AM.png "Screen Shot 2022-05-27 at 11.19.29 AM.png")
+
+- ***Add/replace the following line to where "cpp" is located:***
 
 ```json
 // 📂 settings.json
 "cpp": "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
 ```
-6. Now, create a new C++ file and paste the following code:
+- Now, create a new C++ file and paste the following code:
 
 ```
 // 📂 HelloWorld.cpp
